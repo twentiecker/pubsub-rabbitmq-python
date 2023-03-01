@@ -1,6 +1,6 @@
 # Aplikasi Publish/Subscribe Data dalam "Satu Aplikasi" dengan RabbitMQ
 
-## Setup Projects
+## # Setup Projects
 
 Projects ini dibuat dengan menggunakan <b>PyCharm</b>. Untuk melakukan setup project cukup lakukan clone pada
 menu <code>Git > Clone</code> pada aplikasi <b>PyCharm</b> yang anda gunakan. Kemudian masukkan link URL yang ada di
@@ -10,7 +10,7 @@ bawah ini.
 https://github.com/twentiecker/broadcaster-rabbitmq-python.git
 ```
 
-## Setup RabbitMQ libraries
+## # Setup RabbitMQ Libraries
 
 ```
 pip install pika
@@ -19,9 +19,9 @@ pip install pika
 Library ini digunakan untuk melakukan komunikasi dengan RabbitMQ melalui protocol <b>AMQP 0-9-1</b>. <br/>
 Dokumentasi lengkap mengenai library <b>pika</b> dapat dilihat pada link berikut: https://pika.readthedocs.io/en/stable/
 
-## Setup Build Application Module
+## # Setup Build Application Module
 
-### Setup PyInstaller libraries
+### Setup PyInstaller Libraries
 
 ```
 pip install pyinstaller
@@ -50,9 +50,9 @@ pyinstaller -F pubsub_uts.pyw
 
 File aplikasi yang berhasil digenerate oleh pyinstaller akan ditempatakan pada folder <code>dist</code>
 
-## Setup Local Environment
+## # Setup Local Environment
 
-### Setup Dotenv libraries
+### Setup Dotenv Libraries
 
 ```
 pip install python-dotenv
@@ -62,7 +62,7 @@ Library ini digunakan untuk membaca file local environment yang ada pada source 
 Dokumentasi lengkap mengenai libray ini dapat dilihat pada link
 berikut: https://github.com/theskumar/python-dotenv#getting-started
 
-### Setup file .env
+### Setup File .env
 
 ```
 # konfigurasi RabbitMQ
