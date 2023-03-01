@@ -66,7 +66,7 @@ def terima():
     def subscriber():
         def callback(ch, method, properties, body):
             txt_list_sub.config(state="normal")
-            txt_list_sub.insert(tk.INSERT, f""" [x] Received "{body.decode()}" from {txt_channel_sub.get()}\n""")
+            txt_list_sub.insert(tk.INSERT, f""" [x] Received "{body.decode()}"\n""")
             txt_list_sub.config(state="disabled")
 
         channel = connect().channel()
@@ -87,7 +87,7 @@ def terima():
 
     # properti GUI subscriber
     txt_list_sub.config(state="normal")
-    txt_list_sub.insert(tk.INSERT, f"""Menunggu pesan masuk dari "{txt_channel_sub.get()}"...\n""")
+    txt_list_sub.insert(tk.INSERT, f"""Menunggu pesan masuk...\n""")
     txt_list_sub.config(state="disabled")
 
     # mengatur threading
