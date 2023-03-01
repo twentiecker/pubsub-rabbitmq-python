@@ -1,4 +1,4 @@
-# Aplikasi Broadcast Data dengan RabbitMQ
+# Aplikasi Publish/Subscribe Data dalam "Satu Aplikasi" dengan RabbitMQ
 
 ## Setup Projects
 
@@ -19,7 +19,9 @@ pip install pika
 Library ini digunakan untuk melakukan komunikasi dengan RabbitMQ melalui protocol <b>AMQP 0-9-1</b>. <br/>
 Dokumentasi lengkap mengenai library <b>pika</b> dapat dilihat pada link berikut: https://pika.readthedocs.io/en/stable/
 
-## Setup PyInstaller libraries
+## Setup Build Application Module
+
+### Setup PyInstaller libraries
 
 ```
 pip install pyinstaller
@@ -28,6 +30,25 @@ pip install pyinstaller
 Library ini digunakan untuk membuat executable file dari file python yang sudah kita buat. <br/>
 Dokumentasi lengkap mengenai library <b>pyinstaller</b> dapat dilihat pada link
 berikut: https://pyinstaller.org/en/stable/
+
+### Build Application
+
+Proses build application bisa dilakukan dengan beberapa cara. Pada project ini akan disampaikan dua cara dalam melakukan
+proses build application.
+
+#### General Command
+
+```
+pyinstaller pubsub_uts.pyw
+```
+
+#### Single File Executable
+
+```
+pyinstaller -F pubsub_uts.pyw
+```
+
+File aplikasi yang berhasil digenerate oleh pyinstaller akan ditempatakan pada folder <code>dist</code>
 
 ## Setup Local Environment
 
