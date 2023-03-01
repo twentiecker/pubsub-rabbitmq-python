@@ -1,4 +1,4 @@
-# Aplikasi Publish/Subscribe Data dalam "Satu Aplikasi" dengan RabbitMQ
+# Aplikasi Ping Pong Messanger dengan RabbitMQ
 
 ## # Setup Projects
 
