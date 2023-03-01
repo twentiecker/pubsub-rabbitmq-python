@@ -7,7 +7,7 @@ menu <code>Git > Clone</code> pada aplikasi <b>PyCharm</b> yang anda gunakan. Ke
 bawah ini.
 
 ```
-https://github.com/twentiecker/broadcaster-rabbitmq-python.git
+https://github.com/twentiecker/pubsub-rabbitmq-python.git
 ```
 
 ## # Setup RabbitMQ Libraries
